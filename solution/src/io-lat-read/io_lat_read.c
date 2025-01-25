@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <time.h>     
-#include <signal.h>    
+#include <fcntl.h>
 
 void measure_io_latency(const char *file_path, size_t block_size, size_t iterations) {
     int fd = open(file_path, O_RDONLY);

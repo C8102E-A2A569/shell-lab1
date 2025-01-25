@@ -3,7 +3,6 @@
 #include <stdbool.h>
 #include <string.h>
 #include "../include/shell/built_in_commands.h"
-#include "../include/shell/external_commands.h"
 #include "../include/shell/shell.h"
 #include "../include/shell/tools.h"
 #include "../include/io-lat-read/io_lat_read.h"

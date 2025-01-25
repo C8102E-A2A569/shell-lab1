@@ -4,8 +4,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <pthread.h>
-
-#include <fcntl.h>
 #include "../../include/io-lat-read/array_generator.h"
 #include "../../include/io-lat-read/io_lat_read.h"
 #include "../../include/dedup/dedup.h"
