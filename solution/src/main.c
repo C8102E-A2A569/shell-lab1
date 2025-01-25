@@ -2,15 +2,15 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
-#include "../../include/shell/built_in_commands.h"
-#include "../../include/shell/external_commands.h"
-#include "../../include/shell/shell.h"
-#include "../../include/shell/tools.h"
-#include "../../include/io-lat-read/io_lat_read.h"
-#include "../../include/io-lat-read/array_generator.h"
-#include "../../include/dedup/dedup.h"
-#include "../../include/io-lat-read/tools.h"
-#include "../../include/combined-benchmark/combined.h"
+#include "../include/shell/built_in_commands.h"
+#include "../include/shell/external_commands.h"
+#include "../include/shell/shell.h"
+#include "../include/shell/tools.h"
+#include "../include/io-lat-read/io_lat_read.h"
+#include "../include/io-lat-read/array_generator.h"
+#include "../include/dedup/dedup.h"
+#include "../include/io-lat-read/tools.h"
+#include "../include/combined-benchmark/combined.h"
 
 int main(int argc, char **argv) {
     char buffer[BUFFER_SIZE];
