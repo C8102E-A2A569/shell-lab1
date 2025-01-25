@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up cmake and clang-tidy
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y cmake clang-tidy
+
+    - name: Configure project
+      run: |
+        mkdir -p build
+        cd build
+        cmake ..
+
+    - name: Build project
+      run: |
+        cd build
+        cmake --build . --config Debug --target all -j 18\
+
+    - name: Run tests
+      run: |
+        cd tester
+        chmod +x entrypoint.sh
+        bash entrypoint.sh
