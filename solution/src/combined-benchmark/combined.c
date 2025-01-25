@@ -6,11 +6,11 @@
 #include <pthread.h>
 
 #include <fcntl.h>
-#include "../include/io-lat-read/array_generator.h"
-#include "../include/io-lat-read/io_lat_read.h"
-#include "../include/dedup/dedup.h"
-#include "combined-benchmark/combined.h"
-#include "shell/tools.h"
+#include "../../include/io-lat-read/array_generator.h"
+#include "../../include/io-lat-read/io_lat_read.h"
+#include "../../include/dedup/dedup.h"
+#include "../../include/combined-benchmark/combined.h"
+#include "../../include/shell/tools.h"
 
 void *start_dedup_benchmark_thread(void *arg) {
     ThreadData *data = (ThreadData *)arg;

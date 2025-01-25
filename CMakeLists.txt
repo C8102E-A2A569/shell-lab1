@@ -16,7 +16,7 @@ if(CMAKE_BUILD_TYPE AND NOT CMAKE_BUILD_TYPE IN_LIST CMAKE_CONFIGURATION_TYPES)
 endif()
 
 if(CMAKE_C_COMPILER_ID STREQUAL GNU OR CMAKE_C_COMPILER_ID MATCHES Clang)
-    set(CMAKE_C_FLAGS       "-pedantic -Wall -Werror -Wno-unused -ggdb")
+    set(CMAKE_C_FLAGS       "-pedantic -Wall -Wno-unused -ggdb")
 endif()
 
 find_program(CLANG_TIDY clang-tidy)

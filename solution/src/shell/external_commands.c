@@ -6,6 +6,8 @@
 #include <stdbool.h>
 #include <sys/wait.h>
 #include <unistd.h>
+#include <time.h>  
+#include <signal.h> 
 #include "../../include/shell/external_commands.h"
 
 int child_function(void* arg) {

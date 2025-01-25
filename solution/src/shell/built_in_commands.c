@@ -4,9 +4,9 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include "../../include/shell/tools.h"
-#include "dedup/dedup.h"
-#include "io-lat-read/tools.h"
-#include "io-lat-read/io_lat_read.h"
+#include "../../include/dedup/dedup.h"
+#include "../../include/io-lat-read/tools.h"
+#include "../../include/io-lat-read/io_lat_read.h"
 
 static void handle_echo(const char* args) {
     printf("%s\n", args);

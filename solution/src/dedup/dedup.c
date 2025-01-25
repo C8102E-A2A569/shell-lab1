@@ -1,6 +1,6 @@
 #define _GNU_SOURCE
 #include <stdlib.h>
-#include "../include/dedup/dedup.h"
+#include "../../include/dedup/dedup.h"
 
 static int compare_ints(const int *a, const int *b);
 
