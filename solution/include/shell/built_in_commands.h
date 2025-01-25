@@ -2,7 +2,7 @@
 #define BUILT_IN_COMMANDS_H
 
 bool handle_command(const char* command, const char* args);
-void handle_exit(void);
+void start_combined_benchmark(void);
 
 
 #endif
